@@ -1,0 +1,10 @@
+body { font-family: Arial, sans-serif; background: #f9f9f9; color: #222; padding: 2em; transition: background 0.2s, color 0.2s;}
+body.dark { background: #20242a; color: #eee; }
+.header { display: flex; justify-content: space-between; align-items: center; }
+.notes textarea { width: 100%; font-size: 1em; padding: 0.5em; margin: 1em 0; border-radius: 6px; border: 1px solid #ccc; }
+.todos input, .todos button { font-size: 1em; margin: 0.3em 0.2em; padding: 0.4em; }
+#todoList { list-style: none; padding: 0; }
+#todoList li { background: #fff; border-radius: 5px; margin: 0.3em 0; padding: 0.5em; display: flex; align-items: center; }
+body.dark #todoList li { background: #23272e; }
+li.done { text-decoration: line-through; opacity: 0.5; }
+li button { margin-left: auto; }
