@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Focus Note</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <h2>📝 Focus Note</h2>
+    <button onclick="toggleTheme()">🌙/☀️</button>
+  </div>
+  <div class="notes">
+    <textarea id="note" placeholder="Write your note here..." rows="4" oninput="saveNote()"></textarea>
+  </div>
+  <div class="todos">
+    <input id="todoInput" placeholder="Add a to-do" onkeydown="if(event.key==='Enter')addTodo()">
+    <button onclick="addTodo()">Add</button>
+    <ul id="todoList"></ul>
+  </div>
+  <button onclick="clearAll()" style="margin-top:1em">Clear All</button>
+  <script src="main.js"></script>
+</body>
+</html>
